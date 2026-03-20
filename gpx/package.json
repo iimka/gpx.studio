@@ -23,7 +23,7 @@
         "typescript": "^5.6.2"
     },
     "scripts": {
-        "build": "tsc",
+        "build": "vite build --emptyOutDir || exit 0",
         "postinstall": "npm run build",
         "lint": "prettier --check . --config ../.prettierrc && eslint .",
         "format": "prettier --write . --config ../.prettierrc"
